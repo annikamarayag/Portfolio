@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  background: #e1f2fb !important;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.navigation-bar {
+  position: fixed;
+  background-color: #e1f2fb;
+  width: 100%;
+  height: 2.5em;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 3;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-bar .logo a {
+  margin: .3em;
+  font-size: 1.5em;
+}
+
+.navigation-bar .nav-link {
+  color: #000000;
+}
+
+.navigation-bar .nav-link.active {
+  color: #ff3f81;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navigation-bar .nav-link:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
+}
+
+.menubar {
+  position: fixed;
+  left: 1em;
+  top: .6em;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.menubar div {
+  width: 18px;
+  height: 2px;
+  background-color: #ff3f81;
+  margin-top: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.caption {
+  color: #ff3f81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 200px;
+}
+
+.caption .header {
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  color: #00000093;
+
+}
+
+.caption .title {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.caption .description {
+  margin-top: 40px;
+  color: #00000093;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.caption .icons {
+  display: flex;
+  justify-content: center;
+  display: -ms-flexbox;
+  z-index: 5;
+}
+
+.caption .icons div {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.caption .icons div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.caption .icons img {
+  width: 1.5em;
+}
+
+.caption .slide-down {
+  margin-top: 40px;
+}
+
+.caption .slide-down a:hover {
+  color: #ff3f81;
+}
+
+.about-me {
+  margin-top: 350px;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-me .profile {
+  border-radius: 100%;
+  width: 120px;
+}
+
+.about-me .header {
+  font-size: 2rem;
+  color: #ff3f81;
+}
+
+.about-me section {
+  line-height: 30px;
+  color: rgb(14, 7, 7);
+}
+
+.about-me .school {
+  color: #ff3f81;
+}
+
+.about-me .cv a {
+  font-size: 15px;
+  color: #ff3f81;
+  padding: .7em;
+  background-color: #e1f2fb;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-me .cv a:hover {
+  background-color: #ff3f81;
+  color: #e1f2fb;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.skills {
+  margin-top: 350px;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .header {
+  color: #ff3f81;
+  font-size: 2rem;
+}
+
+.skills section {
+  line-height: 30px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.skills .icon-container li {
+  list-style-type: none;
+  font-size: 16px;
+  color: #ff3f81;
+}
+
+.skills .icon-container i {
+  color: #ff3f81;
+}
+
+.projects {
+  margin-top: 350px;
+  padding-top: 55px;
+}
+
+.projects .header {
+  color: #ff3f81;
+  font-size: 2rem;
+}
+
+.projects .card-title {
+  color: #ff3f81;
+}
+
+.projects .card-text {
+  color: rgb(0, 0, 0);
+}
+
+.projects .card {
+  background-color: #e1f2fb;
+  border: 0;
+  margin: 30px auto 0;
+}
+
+.projects .card:hover {
+  -webkit-box-shadow: 0 0 10px #ff3f81;
+  box-shadow: 0 0 10px #ff3f81;
+}
+
+.projects .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .links .btn {
+  background-color: #e1f2fb;
+  color: #ff3f81;
+  border-radius: 0;
+  border: 1px solid #ff3f81;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: .3s;
+}
+
+.projects .links .btn:hover {
+  background: #ff3f81;
+  color: #e1f2fb;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contacts {
+  margin: 350px auto 0;
+  padding-top: 55px;
+}
+
+.contacts .header {
+  font-size: 2rem;
+  color: #ff3f81;
+}
+
+.contacts .contact-details {
+  color: rgb(0, 0, 0);
+}
+
+.contacts i {
+  color: #ff3f81;
+}
+
+.contacts .or {
+  color: #ff3f81;
+}
+
+.contacts label {
+  color: #ff3f81;
+}
+
+.contacts input, .contacts textarea {
+  border-radius: 0;
+  border: 1px normal #ff3f81 !important;
+  background: #e1f2fb;
+  color: #ff3f81 !important;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: #e1f2fb;
+  outline: none;
+  border-color: #ff3f81;
+  -webkit-box-shadow: 0 0 10px #ff3f81;
+          box-shadow: 0 0 10px #ff3f81;
+}
+
+.contacts button {
+  background-color: #e1f2fb;
+  color: #ff3f81;
+  border-radius: 3px;
+  border: 1px solid #ff3f81;
+  padding: 3px 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contacts button:hover {
+  background-color: #ff3f81;
+  color: #e1f2fb;
+}
+
+.footer {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e1f2fb;
+   color: #ff3f81;
+  height: 150px;
+  position: absolute;
+  z-index: 5;
+}
+
+.footer .social-media a {
+  padding: .5rem;
+  color: #ff3f81;
+  font-size: 1.25rem;
+}
+
+.footer .social-media a:hover {
+  color: white;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .navigation-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 2.5em !important;
+  }
+  .navigation-bar .nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    margin-top: 1px !important;
+    margin-right: 8em;
+  }
+  .menubar {
+    display: none;
+  }
+  .caption .header {
+    margin-top: 2.5em;
+    font-size: 3rem;
+  }
+  .caption .title {
+    font-size: 1.5em;
+  }
+  .caption .btn-container a {
+    font-size: 1rem !important;
+  }
+  .caption .btn-container a .projects {
+    padding: .6rem 1.2rem !important;
+  }
+  .caption .btn-container a .connect {
+    padding: .5rem 1.2rem !important;
+  }
+  .caption .description {
+    font-size: 1em;
+  }
+  .caption .icons img {
+    width: 2em;
+  }
+  .caption .carousel {
+    margin: 5em 0 0 2em;
+  }
+  .skills {
+    font-size: 1.2em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+.bar1.active {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.bar2.active {
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.bar3.active {
+  -webkit-transform: translateY(-2px) rotate(-45deg);
+          transform: translateY(-2px) rotate(-45deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navigation-bar.active {
+  height: 16.5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.active-link {
+  background-color: #ff3f81;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=style.css.map */
